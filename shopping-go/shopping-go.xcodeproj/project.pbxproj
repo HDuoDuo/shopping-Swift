@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40BC48C88F18EE5D518E47C6 /* Pods_shopping_go.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92343B1A561FC3D6537AF7A1 /* Pods_shopping_go.framework */; };
 		425FC3BB1DCF5E070097EEFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425FC3BA1DCF5E070097EEFE /* AppDelegate.swift */; };
 		425FC3BD1DCF5E070097EEFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425FC3BC1DCF5E070097EEFE /* ViewController.swift */; };
 		425FC3C01DCF5E070097EEFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425FC3BE1DCF5E070097EEFE /* Main.storyboard */; };
@@ -47,6 +48,9 @@
 		425FC3D61DCF5E080097EEFE /* shopping-goUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "shopping-goUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		425FC3DA1DCF5E080097EEFE /* shopping_goUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopping_goUITests.swift; sourceTree = "<group>"; };
 		425FC3DC1DCF5E080097EEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92343B1A561FC3D6537AF7A1 /* Pods_shopping_go.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shopping_go.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		971F76DFE9D8282CBF7DD166 /* Pods-shopping-go.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping-go.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shopping-go/Pods-shopping-go.debug.xcconfig"; sourceTree = "<group>"; };
+		C7A9BD3977A834AA253999FA /* Pods-shopping-go.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping-go.release.xcconfig"; path = "Pods/Target Support Files/Pods-shopping-go/Pods-shopping-go.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BC48C88F18EE5D518E47C6 /* Pods_shopping_go.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				425FC3CE1DCF5E080097EEFE /* shopping-goTests */,
 				425FC3D91DCF5E080097EEFE /* shopping-goUITests */,
 				425FC3B81DCF5E070097EEFE /* Products */,
+				7024C8841DEA966ABC0BD88C /* Pods */,
+				8C794D0F64FD7AC892055787 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = "shopping-goUITests";
 			sourceTree = "<group>";
 		};
+		7024C8841DEA966ABC0BD88C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				971F76DFE9D8282CBF7DD166 /* Pods-shopping-go.debug.xcconfig */,
+				C7A9BD3977A834AA253999FA /* Pods-shopping-go.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C794D0F64FD7AC892055787 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92343B1A561FC3D6537AF7A1 /* Pods_shopping_go.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 425FC3DF1DCF5E080097EEFE /* Build configuration list for PBXNativeTarget "shopping-go" */;
 			buildPhases = (
+				440BA233AF97943F9C56A68A /* 📦 Check Pods Manifest.lock */,
 				425FC3B31DCF5E070097EEFE /* Sources */,
 				425FC3B41DCF5E070097EEFE /* Frameworks */,
 				425FC3B51DCF5E070097EEFE /* Resources */,
+				CE942256F852BEF0C43A26D7 /* 📦 Embed Pods Frameworks */,
+				2582CCB6F6252A91BCB539A7 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2582CCB6F6252A91BCB539A7 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shopping-go/Pods-shopping-go-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		440BA233AF97943F9C56A68A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE942256F852BEF0C43A26D7 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shopping-go/Pods-shopping-go-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		425FC3B31DCF5E070097EEFE /* Sources */ = {
@@ -395,6 +470,7 @@
 		};
 		425FC3E01DCF5E080097EEFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971F76DFE9D8282CBF7DD166 /* Pods-shopping-go.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "shopping-go/Info.plist";
@@ -406,6 +482,7 @@
 		};
 		425FC3E11DCF5E080097EEFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A9BD3977A834AA253999FA /* Pods-shopping-go.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "shopping-go/Info.plist";
@@ -482,6 +559,7 @@
 				425FC3E11DCF5E080097EEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		425FC3E21DCF5E080097EEFE /* Build configuration list for PBXNativeTarget "shopping-goTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +568,7 @@
 				425FC3E41DCF5E080097EEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		425FC3E51DCF5E080097EEFE /* Build configuration list for PBXNativeTarget "shopping-goUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +577,7 @@
 				425FC3E71DCF5E080097EEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
