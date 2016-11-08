@@ -15,6 +15,8 @@
 		425FC3C51DCF5E070097EEFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425FC3C31DCF5E070097EEFE /* LaunchScreen.storyboard */; };
 		425FC3D01DCF5E080097EEFE /* shopping_goTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425FC3CF1DCF5E080097EEFE /* shopping_goTests.swift */; };
 		425FC3DB1DCF5E080097EEFE /* shopping_goUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425FC3DA1DCF5E080097EEFE /* shopping_goUITests.swift */; };
+		425FC3EA1DCF61EE0097EEFE /* NetWorkingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425FC3E91DCF61EE0097EEFE /* NetWorkingTool.swift */; };
+		425FC3EC1DCF79F50097EEFE /* dataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425FC3EB1DCF79F50097EEFE /* dataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		425FC3D61DCF5E080097EEFE /* shopping-goUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "shopping-goUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		425FC3DA1DCF5E080097EEFE /* shopping_goUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopping_goUITests.swift; sourceTree = "<group>"; };
 		425FC3DC1DCF5E080097EEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		425FC3E91DCF61EE0097EEFE /* NetWorkingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkingTool.swift; sourceTree = "<group>"; };
+		425FC3EB1DCF79F50097EEFE /* dataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataModel.swift; sourceTree = "<group>"; };
 		92343B1A561FC3D6537AF7A1 /* Pods_shopping_go.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shopping_go.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		971F76DFE9D8282CBF7DD166 /* Pods-shopping-go.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping-go.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shopping-go/Pods-shopping-go.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A9BD3977A834AA253999FA /* Pods-shopping-go.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping-go.release.xcconfig"; path = "Pods/Target Support Files/Pods-shopping-go/Pods-shopping-go.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		425FC3B91DCF5E070097EEFE /* shopping-go */ = {
 			isa = PBXGroup;
 			children = (
+				425FC3E81DCF61480097EEFE /* Tools */,
 				425FC3BA1DCF5E070097EEFE /* AppDelegate.swift */,
 				425FC3BC1DCF5E070097EEFE /* ViewController.swift */,
 				425FC3BE1DCF5E070097EEFE /* Main.storyboard */,
@@ -130,6 +135,15 @@
 				425FC3DC1DCF5E080097EEFE /* Info.plist */,
 			);
 			path = "shopping-goUITests";
+			sourceTree = "<group>";
+		};
+		425FC3E81DCF61480097EEFE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				425FC3E91DCF61EE0097EEFE /* NetWorkingTool.swift */,
+				425FC3EB1DCF79F50097EEFE /* dataModel.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		7024C8841DEA966ABC0BD88C /* Pods */ = {
@@ -331,6 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425FC3EA1DCF61EE0097EEFE /* NetWorkingTool.swift in Sources */,
+				425FC3EC1DCF79F50097EEFE /* dataModel.swift in Sources */,
 				425FC3BD1DCF5E070097EEFE /* ViewController.swift in Sources */,
 				425FC3BB1DCF5E070097EEFE /* AppDelegate.swift in Sources */,
 			);

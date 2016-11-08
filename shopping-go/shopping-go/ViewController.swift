@@ -7,19 +7,15 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    dataManager.loadData(20) { (dataModels) -> () in
+        let model = dataModels.first
+        print("------\(model!.ID)")
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
