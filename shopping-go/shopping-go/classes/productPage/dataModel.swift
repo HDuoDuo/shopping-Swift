@@ -13,7 +13,7 @@ class dataManager: NSObject {
     //请求数据方法
     class func loadData(page: NSInteger,succeed:(([dataModel]) -> ())) -> () {
         //MARK:请求数据
-        let urlSting = String(format: "http://api.sunyuki.com/v0/items?cateId=115&limit=10&offset=%ld", page)
+        let urlSting = String(format: "http://api.sunyuki.com/v0/items?cateId=115&limit=20&offset=%ld", page)
         SVProgressHUD.showWithStatus("正在请求数据...")
         NetWorkingTool.shareInstance().GET(urlSting, paramters: nil) { (responseObject, errror) -> () in
             if responseObject != nil {
