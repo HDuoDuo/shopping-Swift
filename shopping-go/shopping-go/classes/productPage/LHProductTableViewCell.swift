@@ -7,13 +7,15 @@
 //
 
 import UIKit
-
+import SDWebImage
 class LHProductTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var productImg: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var idLabel: UILabel!
     var model :dataModel? {
         didSet {
+            self.productImg.sd_setImageWithURL(NSURL(string: model!.imgs!))
             self.nameLabel.text = model!.name
             self.idLabel.text = String(format: "\(model!.ID!)", locale: nil)
         }
